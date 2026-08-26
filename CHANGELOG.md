@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Record` type alias and `RainfallError` exception hierarchy.
 - `load_records` to read records from a CSV file with `date` and `rain_mm` columns.
 - `mean` and `wettest_day`.
+- `total_rain` for the total rainfall between two dates.
