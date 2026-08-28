@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "rainfall"
-version = "0.1.0.dev0"
+version = "0.1.0"
 description = "Summary statistics for daily rainfall records"
 readme = "README.md"
 license = "BSD-3-Clause"
