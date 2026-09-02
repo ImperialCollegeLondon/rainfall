@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `validate_records` decorator, applied to every public function that takes records.
+- `EmptyRecordsError`.
+
+### Changed
+
+- `wettest_day` and `total_rain` now raise `EmptyRecordsError` for empty input and `InvalidRecordError` for malformed or unsorted records.
+
 ## [0.1.0] - 2026-08-28
 
 ### Added

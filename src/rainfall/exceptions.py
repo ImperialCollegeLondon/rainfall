@@ -7,3 +7,7 @@ class RainfallError(Exception):
 
 class InvalidRecordError(RainfallError):
     """Raised when a record or input file is malformed."""
+
+
+class EmptyRecordsError(RainfallError):
+    """Raised when a calculation needs at least one record and gets none."""

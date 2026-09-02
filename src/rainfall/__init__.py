@@ -1,11 +1,12 @@
 """Summary statistics for daily rainfall records."""
 
-from rainfall.exceptions import InvalidRecordError, RainfallError
+from rainfall.exceptions import EmptyRecordsError, InvalidRecordError, RainfallError
 from rainfall.io import load_records
 from rainfall.stats import mean, total_rain, wettest_day
 from rainfall.types import Record
 
 __all__ = [
+    "EmptyRecordsError",
     "InvalidRecordError",
     "RainfallError",
     "Record",
