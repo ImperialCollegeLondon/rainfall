@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `validate_records` decorator, applied to every public function that takes records.
 - `EmptyRecordsError`.
+- `moving_average` for daily rainfall values.
 
 ### Changed
 

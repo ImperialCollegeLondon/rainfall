@@ -22,6 +22,29 @@ def mean(values_mm: Sequence[float]) -> float:
     return sum(values_mm) / len(values_mm)
 
 
+def moving_average(values_mm: Sequence[float], window_days: int) -> list[float]:
+    """Return the moving average of daily rainfall values.
+
+    Parameters
+    ----------
+    values_mm : Sequence[float]
+        Daily rainfall values in millimetres, in date order.
+    window_days : int
+        Number of consecutive days in each window.
+
+    Returns
+    -------
+    list[float]
+        The mean rainfall of each window in millimetres, one value for every
+        window of ``window_days`` consecutive values that fits in
+        ``values_mm``.
+    """
+    return [
+        mean(values_mm[i : i + window_days])
+        for i in range(len(values_mm) - window_days)
+    ]
+
+
 @validate_records
 def total_rain(records: Sequence[Record], start_date: str, end_date: str) -> float:
     """Return the total rainfall between two dates, inclusive.
