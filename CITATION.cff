@@ -7,8 +7,8 @@ authors:
     given-names: Jay
     affiliation: Imperial College London
 license: BSD-3-Clause
-version: 0.1.0
-date-released: "2026-08-28"
+version: 0.2.0
+date-released: "2026-09-11"
 keywords:
   - rainfall
   - hydrology
