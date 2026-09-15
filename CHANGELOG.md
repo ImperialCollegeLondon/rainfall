@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- `load_records` now gives the date when a rainfall value is not a number.
+
 ## [0.2.0] - 2026-09-11
 
 ### Added

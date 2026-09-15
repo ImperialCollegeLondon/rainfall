@@ -41,7 +41,7 @@ def load_records(path: str | Path) -> list[Record]:
                 rain_mm = float(row["rain_mm"])
             except ValueError as error:
                 raise InvalidRecordError(
-                    f"rain_mm is not a number: {row['rain_mm']!r}"
+                    f"rain_mm is not a number on {row['date']}: {row['rain_mm']!r}"
                 ) from error
             records.append((row["date"], rain_mm))
     return records

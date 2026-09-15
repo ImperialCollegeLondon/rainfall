@@ -27,3 +27,9 @@ def test_load_records_rejects_non_numeric_rain(tmp_path: Path) -> None:
     path = _write_csv(tmp_path, "date,rain_mm\n2026-03-01,n/a\n")
     with pytest.raises(InvalidRecordError, match="not a number"):
         load_records(path)
+
+
+def test_load_records_reports_date_of_non_numeric_rain(tmp_path: Path) -> None:
+    path = _write_csv(tmp_path, "date,rain_mm\n2026-03-05,n/a\n")
+    with pytest.raises(InvalidRecordError, match="2026-03-05"):
+        load_records(path)
