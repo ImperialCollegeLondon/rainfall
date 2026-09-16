@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-09-16
+
 ### Fixed
 
 - `load_records` now gives the date when a rainfall value is not a number.
@@ -32,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `mean` and `wettest_day`.
 - `total_rain` for the total rainfall between two dates.
 
-[Unreleased]: ../../compare/v0.2.0...HEAD
+[Unreleased]: ../../compare/v0.2.1...HEAD
+[0.2.1]: ../../compare/v0.2.0...v0.2.1
 [0.2.0]: ../../compare/v0.1.0...v0.2.0
 [0.1.0]: ../../releases/tag/v0.1.0
