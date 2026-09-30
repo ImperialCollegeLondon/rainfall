@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-09-30
+
 ### Added
 
 - `rainfall` command-line summary, also available as `python -m rainfall`.
@@ -38,7 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `mean` and `wettest_day`.
 - `total_rain` for the total rainfall between two dates.
 
-[Unreleased]: ../../compare/v0.2.1...HEAD
+[Unreleased]: ../../compare/v0.3.0...HEAD
+[0.3.0]: ../../compare/v0.2.1...v0.3.0
 [0.2.1]: ../../compare/v0.2.0...v0.2.1
 [0.2.0]: ../../compare/v0.1.0...v0.2.0
 [0.1.0]: ../../releases/tag/v0.1.0
