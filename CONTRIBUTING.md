@@ -55,9 +55,18 @@ tenths of a millimetre depending on the source, and putting the unit in the
 name makes a mix-up much harder to miss in review. Dates don't need a suffix:
 they're ISO 8601 strings named `date`, `start_date` or `end_date`.
 
+Constants end with their unit too, such as `WET_DAY_THRESHOLD_MM`.
+
 Private modules and functions start with an underscore, like `_validation.py`.
 Anything not listed in `rainfall.__all__` isn't part of the public API and may
 change without notice.
+
+### Thresholds and fixed values
+
+Thresholds and other fixed values belong in module-level constants with a
+docstring saying what they mean, not in numbers written inline in a function.
+Definitions such as what counts as a wet day vary between studies, and a named
+constant makes the choice easy to find and change.
 
 ### Docstrings
 

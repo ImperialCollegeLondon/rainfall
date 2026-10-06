@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `count_wet_days` and the `WET_DAY_THRESHOLD_MM` constant.
+
 ## [0.3.0] - 2026-09-30
 
 ### Added

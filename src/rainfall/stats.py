@@ -5,6 +5,31 @@ from collections.abc import Sequence
 from rainfall._validation import validate_records
 from rainfall.types import Record
 
+WET_DAY_THRESHOLD_MM = 1.0
+"""Minimum daily rainfall, in millimetres, for a day to count as wet."""
+
+
+@validate_records
+def count_wet_days(
+    records: Sequence[Record], threshold_mm: float = WET_DAY_THRESHOLD_MM
+) -> int:
+    """Return the number of wet days.
+
+    Parameters
+    ----------
+    records : Sequence[Record]
+        Daily rainfall records in ascending date order.
+    threshold_mm : float, optional
+        Minimum rainfall in millimetres for a day to count as wet. Defaults to
+        ``WET_DAY_THRESHOLD_MM``.
+
+    Returns
+    -------
+    int
+        Number of days with at least ``threshold_mm`` of rain.
+    """
+    return sum(1 for _date, rain_mm in records if rain_mm >= threshold_mm)
+
 
 def mean(values_mm: Sequence[float]) -> float:
     """Return the arithmetic mean of rainfall values.
