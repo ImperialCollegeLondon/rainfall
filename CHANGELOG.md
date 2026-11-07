@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `count_wet_days` and the `WET_DAY_THRESHOLD_MM` constant.
 
+### Fixed
+
+- `mean` now raises `EmptyRecordsError` when called with empty input (#2).
+
 ## [0.3.0] - 2026-09-30
 
 ### Added

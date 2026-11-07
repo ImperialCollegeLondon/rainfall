@@ -17,6 +17,11 @@ def test_mean_of_three_values() -> None:
     assert mean([1.0, 2.0, 3.0]) == 2.0
 
 
+def test_mean_rejects_empty_records() -> None:
+    with pytest.raises(EmptyRecordsError):
+        mean([])
+
+
 def test_moving_average_returns_values() -> None:
     assert len(moving_average([1.0, 2.0, 3.0, 4.0], 2)) > 0
 
